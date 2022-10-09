@@ -17,14 +17,14 @@
 
         <Style x:Key="Tx" TargetType="TextBlock">
             <Style.Setters>
-                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="FontSize" Value="11"/>
                 <Setter Property="Foreground" Value="Black"/>
             </Style.Setters>
         </Style>
 
         <ControlTemplate x:Key="CTButon" TargetType="Button">
             <Border BorderBrush="Black" 
-                    Background="LightBlue" Width="150">
+                    Background="LightBlue" Width="150" Height="35">
                 <ContentControl Content="{TemplateBinding Content}" HorizontalAlignment="Center" Margin="5"/>
             </Border>
         </ControlTemplate>

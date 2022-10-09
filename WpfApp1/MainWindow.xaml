@@ -64,15 +64,20 @@
 
             </StackPanel>
         </Grid>
-        
-        <StackPanel Grid.Row="1">
-            <Button  Margin="5" Template="{StaticResource CTButon}" Content="Получить результат" Click="Button_Click"/>
-        </StackPanel>
 
-        <StackPanel Grid.Row="2">
-            <TextBlock Style="{StaticResource TBStyle}">Результат</TextBlock>
-            <TextBlock Style="{StaticResource Tx}" Name="TBlResult"></TextBlock>
-        </StackPanel>
+        <Grid Grid.Row="1">
+            <Button  Margin="5" Template="{StaticResource CTButon}" Content="Получить результат" Click="Button_Click"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <StackPanel>
+                <TextBlock Style="{StaticResource TBStyle}"><Run Text="Результат"/></TextBlock>
+                <TextBlock Style="{StaticResource Tx}" x:Name="TBlResult" />
+            </StackPanel>
+            <StackPanel>
+                <Image x:Name = "imgZn" Width = "150" Height = "150" HorizontalAlignment = "Right" />
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Window>
